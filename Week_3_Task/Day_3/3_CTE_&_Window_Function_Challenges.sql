@@ -83,3 +83,4 @@ SELECT category, title, revenue, film_rank
 FROM ranked_films
 WHERE film_rank <= 3
 ORDER BY category, film_rank;
+

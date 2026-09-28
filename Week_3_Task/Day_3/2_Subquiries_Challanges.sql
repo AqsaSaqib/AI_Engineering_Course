@@ -66,3 +66,4 @@ WHERE s.store_id = (
     LIMIT 1
 )
 GROUP BY s.store_id;
+
