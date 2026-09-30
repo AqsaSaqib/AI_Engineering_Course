@@ -53,15 +53,19 @@ Each segment gets a different campaign based on its favorite genre:
 
 ## Challenges and Solutions
 1. **Money was counted twice** when joining invoice with invoice_line.
+
    **Solution:** I calculated money and songs in separate CTEs and then joined them.
 
 2. **Normal AVG gave only one row**, so I couldn't compare each customer.
+
    **Solution:** I used `AVG() OVER ()` so the average shows on every row.
 
 3. **Some customers had two favorite genres** (tie).
+
    **Solution:** I used `ROW_NUMBER()` so each customer gets only one.
 
 4. **LIMIT gave an error inside UNION ALL.**
+
    **Solution:** I put those queries inside brackets `( )`.
 
 ---
