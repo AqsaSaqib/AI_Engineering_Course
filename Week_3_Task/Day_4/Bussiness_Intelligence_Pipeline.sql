@@ -292,7 +292,6 @@ LIMIT 1;
 -- every CTE uses the one before it run everything together, from WITH to the last ;
 
 WITH
-
 -- step 1: one row for every song sold, with all its details
 sales AS (
     SELECT
