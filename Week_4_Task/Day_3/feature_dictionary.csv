@@ -1,0 +1,9 @@
+name,type,rule,why it may help,mutual_info
+is_married,0/1 flag,marital.status is Married-civ-spouse or Married-AF-spouse,Married people earn >50K much more often,0.107
+edu_x_hours,number,education.num x hours.per.week,Educated people who also work long hours should earn the most,0.082
+log_capital_gain,number,log(capital.gain + 1),"Capital gain has a few huge values, log makes them smaller",0.081
+age_group,category,age cut into 6 groups,Income goes up with age and then goes down again,0.062
+higher_education,0/1 flag,education.num >= 13,A Bachelors degree or more was a strong signal on Day 1,0.048
+hours_group,category,hours.per.week cut into 4 groups,"Part-time, full-time and overtime workers earn differently",0.038
+log_capital_loss,number,log(capital.loss + 1),Same idea for capital loss,0.035
+has_capital_gain,0/1 flag,capital.gain > 0,People with any capital gain are more often high earners,0.03
